@@ -6,5 +6,6 @@ jdk:
   - oraclejdk7
 
 before_install:
+  - sudo add-apt-repository "deb http://ftp.us.debian.org/debian unstable main contrib non-free"
   - sudo apt-get update -qq
   - sudo apt-get install -y thrift-compiler
